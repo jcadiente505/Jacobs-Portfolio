@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Jacob Cadiente</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Bio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Me</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- CAROUSEL W/ VIDEO BACKGROUND -->
+    <div id="carouseldiv" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="video-background" autoplay muted loop>
+                                <source src="./assets/images/Date.mp4" type="video/mp4">
+                            </video>
+                            <div class="content">
+                                <h1>Full Stack Web Development</h1>
+                                <p>Click on the icon for my Github!</p>
+                                <a href="https://github.com/jcadiente505">
+                                    <i class="devicon-github-plain-wordmark icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="video-background" autoplay muted loop>
+                                <source src="./assets/images/Broadwaycrew.mp4" type="video/mp4">
+                            </video>
+                            <div class="content">
+                                <h1>Front End UI/UX design</h1>
+                                <i class="devicon-html5-plain colored icon"></i>
+                                <i class="devicon-css3-plain colored icon"></i>
+                                <i class="devicon-bootstrap-plain colored icon"></i>
+                                <i class="devicon-javascript-plain colored icon"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="video-background" autoplay muted loop>
+                                <source src="./assets/images/Love-Coding.mp4" type="video/mp4">
+                            </video>
+                            <div class="content">
+                                <h1>System Architecture/Back End Engineer</h1>
+                                <i class="devicon-nodejs-plain colored icon"></i>
+                                <i class="devicon-python-plain colored icon"></i>
+                                <i class="devicon-rails-plain-wordmark colored icon"></i>
+                                <i class="devicon-amazonwebservices-plain-wordmark colored icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT ME SECTION -->
+        <div id="about-me" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="about-header" class="border-bottom">About Me...</h1>
+                </div>
+                <div id="img-div" class="col-md-3">
+                    <img src="./assets/images/portfolio-pic.jpg" alt="profile picture">
+                </div>
+                <div id="about-section" class="col-md-9 float-left">
+                    <p>Hello my name is Jacob Cadiente! I am a student at the UCF Coding Bootcamp for Full Stack Web Development. I am well versed in Front End and Back End languages and frameworks such as HTML5, CSS3, and Javascript as well as JS frameworks such as Node.js and React.js.</p>
+                    <br>
+                    <p>I originally worked in the service industry for over 6 years as a server and worked up too different manager positions such as Head Bartender of Blackstar Entertainment Venue, Bar Manager Ivanhoe Craft Bar, and Corporate Trainer Duffys Sports Grille. I studied Bio-Medical sciences at Adventist University for about 2 years as well.</p>
+                    <br>
+                    <p>To me, Web Development is the perfect blend of technical skill, logical thinking and creativity. Being a part of a team of skilled individuals working together to create a unique application I think is the best part of the job. I have worked in team settings in every job I've ever had, with coding I feel as if the work really matters.</p>
+                    <br>
+                    <p>I find creating web and mobile applications to be very rewarding work. I like that I can use my skill set to bring information too people in a fun and artistic way.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+        <script src="./assets/main.js"></script>
+</body>
+
+</html>

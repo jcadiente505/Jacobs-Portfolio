@@ -1,0 +1,45 @@
+body {
+    background-color: beige
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 750px;
+}
+
+.video-background {
+    width: 100%;
+    padding-bottom: 500px;
+    margin-top: 50px;
+}
+
+.icon {
+    margin: 25px;
+    font-size: 100px;
+}
+
+#about-me {
+    margin-top: -450px;
+}
+
+#about-header {
+    color: rgb(70, 69, 69);
+    padding: 25px;
+    margin-bottom: 25px;
+    font-size: 50px
+}
+
+#about-section {
+    font-size: 20px;
+    float: left;
+}
+
+#img-div {
+    float:left
+}
