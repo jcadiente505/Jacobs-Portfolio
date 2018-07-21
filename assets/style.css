@@ -2,6 +2,11 @@ body {
     background-color: beige
 }
 
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
 .content {
     position: fixed;
     bottom: 0;
@@ -32,14 +37,15 @@ body {
     color: rgb(70, 69, 69);
     padding: 25px;
     margin-bottom: 25px;
-    font-size: 50px
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
 }
 
-#about-section {
+.about-section {
     font-size: 20px;
-    float: left;
 }
 
 #img-div {
-    float:left
+    float: left;
+    margin-right: 18px;
 }
