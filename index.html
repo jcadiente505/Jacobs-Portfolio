@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Devicon CDN -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
         crossorigin="anonymous">
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> -->
+    <!-- Materialize JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script> -->
+    <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+    <!-- Style.css -->
     <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
@@ -35,9 +44,43 @@
                     <a class="nav-link" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact Me</a>
+                    <div class="btn-group dropright">
+                        <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Contact Me!
+                        </button>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                  <label for="exampleDropdownFormEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleDropdownFormPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                  <label class="form-check-label" for="dropdownCheck">
+                                    Remember me
+                                  </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </form>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">New around here? Sign up</a>
+                              <a class="dropdown-item" href="#">Forgot password?</a>
+                        </div>
+                      </div>
                 </li>
             </ul>
+            <button type="button" class="btn btn-outline-light" onclick="openNav()">Favorite Projects!</Button>
+            <div id="mySidenav" class="sidenav navbar-dark bg-dark">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="https://jcadiente505.github.io/Project-One/">FoodFinder App!</a>
+                <a href="https://jcadiente505.github.io/unit-4-game/">RPG Game!</a>
+                <a href="https://jcadiente505.github.io/Trivia-game-2/">Star Wars Trivia!</a>
+                <a href="https://jcadiente505.github.io/Giphy-API/">Gif Generator</a>
+              </div>
         </div>
     </nav>
     <!-- CAROUSEL W/ VIDEO BACKGROUND -->
@@ -66,8 +109,8 @@
                                 <h1>Front End UI/UX design</h1>
                                 <i class="devicon-html5-plain colored icon"></i>
                                 <i class="devicon-css3-plain colored icon"></i>
-                                <i class="devicon-bootstrap-plain colored icon"></i>
                                 <i class="devicon-javascript-plain colored icon"></i>
+                                <i class="devicon-react-original colored icon"></i>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -78,8 +121,8 @@
                                 <h1>Back End Programming</h1>
                                 <i class="devicon-nodejs-plain colored icon"></i>
                                 <i class="devicon-python-plain colored icon"></i>
-                                <i class="devicon-rails-plain-wordmark colored icon"></i>
-                                <i class="devicon-amazonwebservices-plain-wordmark colored icon"></i>
+                                <i class="devicon-mysql-plain-wordmark colored icon"></i>
+                                <i class="devicon-php-plain colored icon"></i>
                             </div>
                         </div>
                     </div>
@@ -108,20 +151,22 @@
                     <p class="about-section">To me, Web Development is the perfect blend of technical skill, logical thinking and creativity. Being
                         a part of a team of skilled individuals working together to create a unique application I think is
                         the best part of the job. I have worked in team settings in every job I've ever had, with coding
-                        I feel as if the work really matters.</p>
-                    <br>
-                    <p class="about-section">I find creating web and mobile applications to be very rewarding work. I like that I can use my skill
-                        set to bring information too people in a fun and artistic way. Since </p>
+                        I feel as if the work really matters. I find creating web and mobile applications to be very rewarding
+                        work. I like that I can use my skill set to bring information too people in a fun and artistic way.</p>
                 </div>
             </div>
         </div>
+        <!-- jQuery CDN -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
+        <!-- Bootstrap Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
+        <!-- Bootstrap JS CDN -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
             crossorigin="anonymous"></script>
+        <!-- Main.js -->
         <script src="./assets/main.js"></script>
 </body>
 
